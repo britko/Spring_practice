@@ -45,8 +45,9 @@ public class SpringConfig {
 //        return new JpaMemberRepository(em); // JPA
 //    }
 
-    @Bean
-    public TimeTraceAop timeTraceAop() {
-        return new TimeTraceAop();
-    }
+    // TimeTraceAop.java 에서 @Component 대신 쓸 수 있는 문장
+//    @Bean
+//    public TimeTraceAop timeTraceAop() {
+//        return new TimeTraceAop();
+//    }
 }
