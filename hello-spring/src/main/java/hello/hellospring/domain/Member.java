@@ -12,7 +12,7 @@ import javax.persistence.Id;
 public class Member {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long userIdx;
     private String name;
     private String pw;
     private String email;

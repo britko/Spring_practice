@@ -25,7 +25,7 @@ public class MemberService {
         // 같은 이름이 있는 중복 회원X
         validateDuplicateMember(member); // 중복 회원 검증
         memberRepository.save(member);
-        return member.getId();
+        return member.getUserIdx();
     }
 
     private void validateDuplicateMember(Member member) {
